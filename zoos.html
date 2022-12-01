@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stayle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            xsm: '10px',
+                            sm: '20px',
+                            lg: '30px',
+                            xl: '40px',
+                        },
+                        screens: {
+                            xsm: '300px',
+                            sm: '560px',
+                            lg: '940px',
+                            xl: '1240px',
+
+                        },
+                    },
+                    screens: {
+                        xsm: '300px',
+                        sm: '560px',
+                        lg: '940px',
+                        xl: '1240px',
+
+                    },
+                    colors: {
+                        'header-bg': '#111115',
+                        'intro-text': '#FFEE2E',
+                        'nav-hover': '#F9804B',
+                        'btn-hover': '#E47209',
+                        'btn-active': '#4B9200',
+                        'btn-disable': '#767474',
+                        'h1china': '#333B41',
+                        'benom': '#FEBDAB ',
+                        'h2sariq': '#FE9013',
+                        'sectionend': '#F1F3F2',
+                        'sectionp': '#BDBDBD',
+                        'sectionq': '#767474',
+                        'bg-simple': '#404950',
+                        form: '#929699',
+                        'benom-in': 'rgba(253, 253, 255, 0.52)',
+                        'footer-ikon': 'rgba(196, 196, 196, 0.5)',
+
+                    },
+                    fontSize: {
+                        '85px': '85px',
+                        'sectionh': '15px'
+                    },
+                    borderRadius: {
+                        'border-raduis25': '25px',
+                        'border-raduis50': '50%',
+                    },
+                    spacing: {
+                        'header-nav-gap-58': '58px',
+                        'maxwidth268': '368px',
+                        'maxwidth700': '940px',
+                        'maxwidth400': '400px',
+                    },
+                    backgroundImage: {
+                        'panda': "url('./image/bg-panda.png')",
+                        'aylanacha': "url('./image/aylanacha.svg')",
+                    },
+                    maxWidth: {
+                        'maxwidth976': '976px',
+                    },
+                    height: {
+                        'simple': '27px',
+                    },
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header class="bg-header-bg text-white">
+        <div
+            class="container flex gap-header-nav-gap-58 items-center py-4 mx-auto xsm:justify-between lg:justify-start ">
+            <div><img src="./image/logo3.png" alt="kompaniya logosi"></div>
+            <nav class="sm:hidden xsm:hidden lg:block">
+                <ul class=" flex gap-header-nav-gap-58">
+                    <li class="hover:text-nav-hover"><a href="./index.html">About</a></li>
+                    <li class="hover:text-nav-hover"><a href="./zoos.html">Map</a></li>
+                    <li class="hover:text-nav-hover"><a href="./zoos.html">Zoos</a></li>
+                    <li class="hover:text-nav-hover"><a href="./zoos.html">Contact us</a></li>
+                    <li class="hover:text-nav-hover"><a href="./zoos.html">Designed by ©</a></li>
+                </ul>
+            </nav>
+            <div class="lg:hidden">
+                <img src="./image/menyu3.png" alt="menyu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto">
+                <div class=" lg:pr-32 lg:h-panda-h-1 sm:h-panda-h-2 xsm:h-panda-h-3 bg-panda bg-cover object-fill">
+                    <div class="relative flex flex-col justify-center items-end pt-10 max-w-maxwidth100 pb-10">
+                        <img src="./image/sariq-aylana.png" width="465" height="465" alt="stayle">
+                        <h1
+                            class="leading-extra-loose   max-w-lg font-bold not-italic uppercase lg:text-85px  sm:text-6xl xsm:text-4xl    flex flex-col justify-center text-center absolute top-28 lg:-right-32  text-white">
+                            Watch your <strong class="text-intro-text">favorite</strong> animal online</h1>
+                        <button type="submit"
+                            class="lg:mt-26 lg:mr-1 sm:mx-auto sm:mt-12 xsm:mt-12 active:bg-btn-active mt disabled:bg-btn-disable  hover:bg-btn-hover  py-4 px-24 flex items-center justify-center text-center text-white bg-nav-hover rounded-border-raduis25">wath
+                            online</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-benom py-16 ">
+                <div class="container mx-auto text-white">
+                    <h2 class="text-4xl font-normal">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h2>
+                    <p class="text-base  font-medium pt-3">
+                        Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with
+                        educational programs and public and private events cancelled or postponed for additional months.
+                        We need you now more than ever to help ensure that we overcome these challenges. We have been
+                        actively raising funds in the community, and we are grateful for the generosity. But much more
+                        support is still needed, and we need your help! Please consider a gift today – no matter what
+                        size – to help us sustain our mission.
+                    </p>
+                    <h3 class="pt-10 text-h2sariq text-4xl pb-14">Donation Information</h3>
+                </div>
+                <div class="container mx-auto bg-benom-in pb-20">
+                    <h2 class="text-5xl text-h2sariq flex justify-center pt-10">Pick and feed a friend</h2>
+                    <p class="text-2xl flex justify-center pt-5">We know the animals bring you joy, and in these
+                        extraordinary times, we’re glad.</p>
+                    <div class="grid lg:grid-cols-3 items-center max-w-2xl mx-auto">
+                        <div class="flex flex-col justify-center items-center">
+                            <h2 class="text-7xl">4</h2>
+                            <p class="text-base">Panda diet for the day.</p>
+                        </div>
+                        <div>
+                            <img src="./image/pus.svg" alt="stayle">
+                        </div>
+                        <div>
+                            <img src="./image/oandaaa.png" alt="stayle">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                            Amount
+                        </h3>
+                    </div>
+                    <div>
+                        <div class="mx-auto bg-bg-simple w-4/5 h-4 flex justify-around items-center">
+                            <div class="inline-block bg-yellow-300 w-2 h-2 rounded-full anim text-center relative">
+                                <span class="block mt-5 text-xs">$500</span>
+                            </div>
+                            <div class="inline-block bg-yellow-300 w-2 h-2 rounded-full anim text-center relative">
+                                <span class="block mt-5 text-xs">$250</span>
+                            </div>
+                            <div class="inline-block bg-yellow-300 w-2 h-2 rounded-full anim text-center relative">
+                                <span class="block mt-5 text-xs">$100</span>
+                            </div>
+                            <div class="inline-block bg-yellow-300 w-2 h-2 rounded-full anim text-center relative">
+                                <span class="block mt-5 text-xs">$50</span>
+                            </div>
+                            <div class="inline-block bg-yellow-300 w-2 h-2 rounded-full anim text-center relative">
+                                <span class="block mt-5 text-xs">$25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mx-auto mt-16">
+                        <form action="">
+                            <input type="text"
+                                class="py-4 bg-transparent border-2 border-solid border-form focus:border-red rounded-lg"
+                                placeholder="Another amount        $" id="text">
+                            <label for="text"></label>
+                        </form>
+                        <div class="flex justify-center gap-x-14">
+                            <div class="flex items-center gap-x-3">
+                                <div><img src="./image/chaaaaaaaaaa.svg" alt=""></div>
+                                <div>
+                                    <h4>Monthly</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-x-3">
+                                <div><img src="./image/chaaaaaaaaaa.svg" alt=""></div>
+                                <div>
+                                    <h4>Once</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <button
+                                class=" sm:mx-auto active:bg-btn-active mt disabled:bg-btn-disable  hover:bg-btn-hover  py-4 px-24 flex items-center justify-center text-center text-white bg-nav-hover rounded-border-raduis25">Feed
+                                a friend now</button>
+                        </div>
+                        <div class="mt-5 flex justify-center">
+                            <p>Share with your friends on social networks </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-black mt-20  ">
+            <div class="flex container mx-auto">
+                <div class="container mx-auto pb-12  ">
+                    <div class="pt-10">
+                        <img src="./image/logo3.png" alt="this is kompani logo">
+                    </div>
+                    <div class="pt-16">
+                        <button type="submit"
+                            class="mt-4 sm:mx-0 xsm:mx-auto flex py-4 bg-nav-hover rounded-border-raduis25 text-white px-9 active:bg-btn-active disabled:bg-btn-disable  hover:bg-btn-hover text-base">donate
+                            for volunteers</button>
+                    </div>
+                    <div class="flex  gap-3 pt-11">
+                        <div
+                            class="w-7 h-7 bg-footer-ikon active:bg-btn-active hover:bg-btn-hover rounded-full flex items-center justify-center">
+                            <img src="./image/fecoobok.svg" alt="Facebook" width="8" height="16">
+                        </div>
+                        <div class="text-white">
+                            <h4>Facebook</h4>
+                        </div>
+                    </div>
+                    <div class="flex  gap-3 pt-3">
+                        <div
+                            class="w-7 h-7 bg-footer-ikon active:bg-btn-active hover:bg-btn-hover rounded-full flex items-center justify-center">
+                            <img src="./image/twiiiii.svg" alt="Facebook" width="16" height="14">
+                        </div>
+                        <div class="text-white">
+                            <h4>Twitter</h4>
+                        </div>
+                    </div>
+                    <div class="flex  gap-3  pt-3">
+                        <div
+                            class="w-7 h-7 bg-footer-ikon active:bg-btn-active hover:bg-btn-hover rounded-full flex items-center justify-center">
+                            <img src="./image/instaaaaa.svg" alt="Facebook" width="16" height="16">
+                        </div>
+                        <div class="text-white">
+                            <h4>Instagram</h4>
+                        </div>
+                    </div>
+                    <div class="flex  gap-3  pt-3">
+                        <div
+                            class="w-7 h-7 bg-footer-ikon active:bg-btn-active hover:bg-btn-hover rounded-full flex items-center justify-center">
+                            <img src="./image/yooouuuu.svg" alt="Facebook" width="18" height="12">
+                        </div>
+                        <div class="text-white">
+                            <h4>YouTube</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white container mx-auto mt-96 xl:block xsm:hidden">
+                    <ul class="flex gap-header-nav-gap-58 ">
+                        <li class="hover:text-nav-hover"><a href="index.html">About</a></li>
+                        <li class="hover:text-nav-hover"><a href="index.html">Map</a></li>
+                        <li class="hover:text-nav-hover"><a href="index.html">Zoos</a></li>
+                        <li class="hover:text-nav-hover"><a href="index.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="lg:block xsm:hidden">
+                    <div class="text-white pt-10 text-2xl">
+                        <h4>Subscribe to our news</h4>
+                    </div>
+                    <div class="flex gap-3 mt-4">
+                        <form class="cursor-pointer flex gap-x-5" action="https://echo.htmlacademy.ru">
+                            <label for="email"></label>
+                            <input
+                                class="focus:outline-none focus:green focus:green-violet-300 text-white  py-3 px-5 valid:bg-black invalid:text-black border-2 border-solid border-yellow-700  invalid:border-red-600 invalid:border-solid invalid:border-2"
+                                type="email" placeholder="Enter your email" id="email">
+
+                            <button
+                                class="bg-white text-btn-active text-base border-2 border-solid border-btn-active py-3 px-10 rounded-md font-normal"
+                                type="submit">Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="text-white mt-56">
+                        <h3>Designed by Alisa Samborskaya</h3>
+                        <h2>©RSSchool & ©Yem Digital 2021</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

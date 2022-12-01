@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/stayle.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -101,11 +102,11 @@
             <div><img src="./image/logo3.png" alt="kompaniya logosi"></div>
             <nav class="sm:hidden xsm:hidden lg:block">
                 <ul class=" flex gap-header-nav-gap-58">
-                    <li class="hover:text-nav-hover"><a href="">About</a></li>
-                    <li class="hover:text-nav-hover"><a href="">Map</a></li>
-                    <li class="hover:text-nav-hover"><a href="">Zoos</a></li>
-                    <li class="hover:text-nav-hover"><a href="">Contact us</a></li>
-                    <li class="hover:text-nav-hover"><a href="">Designed by ©</a></li>
+                    <li class="hover:text-nav-hover"><a href="./index.html">About</a></li>
+                    <li class="hover:text-nav-hover"><a href="./index.html">Map</a></li>
+                    <li class="hover:text-nav-hover"><a href="./zoos.html">Zoos</a></li>
+                    <li class="hover:text-nav-hover"><a href="./index.html">Contact us</a></li>
+                    <li class="hover:text-nav-hover"><a href="./index.html">Designed by ©</a></li>
                 </ul>
             </nav>
             <div class="lg:hidden">
@@ -486,15 +487,16 @@
                         <h4>Subscribe to our news</h4>
                     </div>
                     <div class="flex gap-3 mt-4">
-                        <form class="cursor-pointer" action="https://echo.htmlacademy.ru">
+                        <form class="cursor-pointer flex gap-x-5" action="https://echo.htmlacademy.ru">
                             <label for="email"></label>
                             <input
-                                class="focus:outline-none focus:green focus:green-violet-300 text-white  py-3 px-5 valid:bg-black invalid:text-black border-2 border-solid border-yellow-700  invalid:border-red-600 invalid:border-solid invalid:border-4"
+                                class="focus:outline-none focus:green focus:green-violet-300 text-white  py-3 px-5 valid:bg-black invalid:text-black border-2 border-solid border-yellow-700  invalid:border-red-600 invalid:border-solid invalid:border-2"
                                 type="email" placeholder="Enter your email" id="email">
+
+                                <button class="bg-white text-btn-active text-base border-2 border-solid border-btn-active py-3 px-10 rounded-md font-normal"
+                                type="submit">Submit
+                                </button>
                         </form>
-                        <button
-                            class="bg-white text-btn-active text-base border-2 border-solid border-btn-active py-3 px-10 rounded-md font-normal"
-                            type="submit">Submit</button>
                     </div>
                     <div class="text-white mt-56">
                         <h3>Designed by Alisa Samborskaya</h3>
